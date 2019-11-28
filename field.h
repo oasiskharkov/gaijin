@@ -4,11 +4,11 @@
 #include <vector>
 #include <array>
 
-class Ball;
-class Bit;
-class Brick;
+#include "ball.h"
+#include "bat.h"
+#include "brick.h"
 
-static const unsigned SIZE = 1024 * 768;
+static const unsigned SIZE = 640 * 480;
 
 class Field
 {
@@ -17,7 +17,7 @@ public:
    Field(unsigned color);
 private:
    std::array<unsigned, SIZE> m_field;
-   std::unique_ptr<Bit> m_bit;
-   std::unique_ptr<Ball> m_bit;
+   std::unique_ptr<Bat> m_bit;
+   std::unique_ptr<Ball> m_ball;
    std::vector <std::unique_ptr<Brick>> m_bricks;
 };

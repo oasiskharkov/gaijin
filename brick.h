@@ -5,10 +5,8 @@
 class Brick final : public Figure
 {
 public:
-   enum Type {Red = 100, Yellow = 200, Blue = 300, Green = 400};
-   Brick();
+   enum Type {RED = 100, YELLOW = 200, BLUE = 300, GREEN = 400};
    Brick(const Vector& pos, float height, float width, unsigned color, Type type);
-   void move(float dt) override;
    static int points(Type type);
 private:
    Type m_type;

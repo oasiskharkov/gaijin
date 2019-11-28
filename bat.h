@@ -2,10 +2,10 @@
 
 #include "figure.h"
 
-class Bat final : public Figure
+class Bat final : public MovableFigure
 {
 public:
    Bat() = default;
-   Bat(const Vector& pos, float height, float width, unsigned color);
+   Bat(const Vector& position, float height, float width, unsigned color, const Vector& direction, float velocity);
    void move(float dt) override;
 };
