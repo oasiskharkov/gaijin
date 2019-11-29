@@ -2,10 +2,10 @@
 
 struct Vector
 {
-   float x;
-   float y;
+   float m_x;
+   float m_y;
 
-   explicit Vector(float _x = 0.0f, float _y = 0.0f);
+   explicit Vector(float x = 0.0f, float y = 0.0f);
 
    Vector operator - (const Vector& v);
    Vector operator + (const Vector& v);

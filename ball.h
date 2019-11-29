@@ -6,6 +6,6 @@ class Ball final : public MovableFigure
 {
 public:
    Ball() = default;
-   Ball(const Vector& position, float height, float width, unsigned color, const Vector& direction, float velocity);
+   Ball(const Vector& position, int height, int width, unsigned color, const Vector& velocity);
    void move(float dt) override;
 };

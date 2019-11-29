@@ -6,6 +6,6 @@ class Bat final : public MovableFigure
 {
 public:
    Bat() = default;
-   Bat(const Vector& position, float height, float width, unsigned color, const Vector& direction, float velocity);
+   Bat(const Vector& position, int height, int width, unsigned color, const Vector& velocity);
    void move(float dt) override;
 };

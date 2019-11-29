@@ -1,6 +1,6 @@
 #include "brick.h"
 
-Brick::Brick(const Vector & pos, float height, float width, unsigned color, Type type) :
+Brick::Brick(const Vector & pos, int height, int width, unsigned color, Type type) :
    Figure{pos, height, width, color},
    m_type{type}
 {
